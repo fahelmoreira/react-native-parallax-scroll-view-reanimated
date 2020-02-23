@@ -9,7 +9,7 @@ Remember to pass a Animated component to `renderScrollComponent`, by default it 
 
 # Example
 ```js
-import ParallaxScrollView from 'react-native-parallax-scroll-view';
+import ParallaxScrollView from 'react-native-parallax-scroll-view-reanimated';
 import CustomScrollView from 'custom-scroll-view'
 
 const AnimatedCustomScrollView = Animated.createAnimatedComponent(CustomScrollView)
@@ -48,10 +48,8 @@ A `ScrollView`-like component that:
 ## Installation
 
 ```
-$ npm install react-native-parallax-scroll-view --save
+$ yarn add react-native-parallax-scroll-view-reanimated
 ```
-
-**Note:** For React Native 0.19.0 and earlier, you'll want to use `react-native-parallax-scroll-view@0.17.4`. Version `0.18.0` changes the scrolling API to be compatible with React Native 0.20.0.
 
 ## Demo
 
@@ -63,7 +61,7 @@ $ npm install react-native-parallax-scroll-view --save
 ## Basic Usage
 
 ```js
-import ParallaxScrollView from 'react-native-parallax-scroll-view';
+import ParallaxScrollView from 'react-native-parallax-scroll-view-reanimated';
 
 // Inside of a component's render() method:
 render() {
