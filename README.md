@@ -2,10 +2,10 @@
 
 [![NPM](https://nodei.co/npm/react-native-parallax-scroll-view.png)](https://www.npmjs.com/package/react-native-parallax-scroll-view)
 
-# Rodrigocs - Animated Driver
+# Reanimated
 
-This component now uses Native Driver by default.
-Remember to pass a Animated component to `renderScrollComponent`, by default it has `Animated.ScrollView`
+This component now uses Reanimated library for better perfomace by default.
+Remember to pass a Animated from reanimated component to `renderScrollComponent`, by default it has `Animated.ScrollView`
 
 # Example
 ```js
