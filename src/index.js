@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Dimensions, View, ViewPropTypes } from 'react-native';
-import Animated from 'react-native/Libraries/Core/Devtools/parseErrorStack';
+import Animated from 'react-native-reanimated';
 
 const styles = require('./styles');
 
@@ -68,10 +68,9 @@ class ParallaxScrollView extends Component {
 		this._footerHeight = 0;
 	}
 
-	animatedEvent = Animated.event(
-		[{ nativeEvent: { contentOffset: { y: this.scrollY } } }],
-		{ useNativeDriver: true }
-	);
+	animatedEvent = Animated.event([
+		{ nativeEvent: { contentOffset: { y: this.scrollY } } }
+	]);
 
 	render() {
 		const {
