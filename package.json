@@ -5,7 +5,7 @@
 	"main": "src/index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jaysoo/react-native-parallax-scroll-view"
+		"url": "https://github.com/fahelmoreira/react-native-parallax-scroll-view-reanimated"
 	},
 	"files": [
 		"src",
@@ -28,6 +28,7 @@
 	"author": "Jack Hsu",
 	"license": "ISC",
 	"dependencies": {
-		"prop-types": "^15.6.0"
+		"prop-types": "^15.6.0",
+		"react-native-reanimated": "^1.7.0"
 	}
 }
