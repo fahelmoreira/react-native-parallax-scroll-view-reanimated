@@ -68,9 +68,10 @@ class ParallaxScrollView extends Component {
 		this._footerHeight = 0;
 	}
 
-	animatedEvent = Animated.event([
-		{ nativeEvent: { contentOffset: { y: this.scrollY } } }
-	]);
+	animatedEvent = Animated.event(
+		[{ nativeEvent: { contentOffset: { y: this.scrollY } } }],
+		{ useNativeDriver: true }
+	);
 
 	render() {
 		const {
@@ -390,6 +391,7 @@ class ParallaxScrollView extends Component {
 			const p = pivotPoint(parallaxHeaderHeight, stickyHeaderHeight);
 			return (
 				<View
+					pointerEvents='box-none'
 					style={[
 						styles.stickyHeader,
 						{
